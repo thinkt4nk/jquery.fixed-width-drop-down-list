@@ -1,0 +1,4 @@
+This jQuery plugin creates a slicker feel, fixed-width drop-down list (to avoid IE bug). The plugin takes very little work to get working.  See the example included.
+TODO: A lot, not the least of which being more flexibility for setting the select width, and a slide-down effect for the option list
+
+Thanks to Levi Dawson for the select background image.

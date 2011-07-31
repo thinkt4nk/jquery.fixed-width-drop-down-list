@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Fixed-width drop-down list example</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.fixed-drop-down-list.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" src="./css/fixed-drop-down-list.css" />
+	</head>
+
+	<body>
+		<form action="" method="POST">
+			<div class="row" id="color_select">
+				<label for="color">Select a Color</label>
+				<ul id="color">
+					<li>Blue</li>
+					<li>Red</li>
+					<li>Green</li>
+					<li>Fuschia</li>
+				</ul>
+			</div>
+			
+			<div class="row">
+				<input type="submit" value="Submit" />
+			</div>
+		</form>
+
+		<script type="text/javascript">
+			$('#color_select').fixedDropDownList({
+				onSelectOption : function(selected_option) {
+					console.log(selected_option);
+				}
+			});
+		</script>
+	</body>
+</html>
